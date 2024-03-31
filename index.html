@@ -1,20 +1,25 @@
 <!DOCTYPE html>
 <html lang="pt-bt">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css"><link>
-    <title>Lista de tarefas</title>
-</head>
-<body>
-    <div id="containers">
-        <div id="tarefas">
-            <div id="inputs">
-                <label for="tarefa">Tarefa:</label>
-                <input type="text" id="tarefa" name="tarefa">
-                <input type="submit" value="Submit">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css"><link>
+        <title>Lista de tarefas</title>
+    </head>
+    <body>
+        <div id="containers">
+            <div id="tarefas">
+                <div id="inputs">
+                    <label for="tarefa">Tarefa:</label>
+                    <input type="text" id="tarefa" name="tarefa">
+                    <button id="adicionarTarefa">Adicionar</button>
+                </div>
+                <ul id="listaTarefas"></ul>
             </div>
         </div>
-    </div>
-</body>
+        <script src="script.js"></script>
+        <script>
+            document.getElementById('adicionarTarefa').addEventListener('click', addTarefa);
+        </script>
+    </body>
 </html>
