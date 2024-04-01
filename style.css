@@ -1,7 +1,25 @@
+*{
+    box-sizing: border-box;
+}
+
 body{
     background: rgb(168, 51, 255);
 }
 
+#inputs{
+    text-align: center;
+}
+
 #tarefaTitle{
+    font-weight: 1000;
     font-size: 35px;
+}
+
+#tarefa{
+    font-size: 20px;
+}
+
+#botaoAdicionarTarefa{
+    margin: 10px;
+    
 }
